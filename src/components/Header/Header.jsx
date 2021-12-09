@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -10,10 +11,14 @@ function Header() {
         </div>
         <div className="links-container">
           <div className="header-link">
-            <h3>Home</h3>
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              <h3>Home</h3>
+            </Link>
           </div>
           <div className="header-link">
-            <h3>About me</h3>
+            <Link to={"/aboutMe"}>
+              <h3>About me</h3>
+            </Link>
           </div>
           <div className="header-link">
             <h3>Experience and Projects</h3>
